@@ -1,30 +1,35 @@
-// Entrada nomeando 3 variaveis nome, xp (experiencia) e nivel
+// Entrada nomeando 4 variaveis QuantidadeVitorias, QuantidadeDerrotas, Saldo Rankeadas (SaldoVitorias e Derrotas) e nivel
 
-let nome = "Aurelino"
+let QuantidadeVitorias = 10
 
-let XP = 1000
+let QuantidadeDerrotas = 5
 
-let nivel = "AVS"
+let SaldoRankeadas = QuantidadeVitorias - QuantidadeDerrotas
 
-//Repeticoes com classificacoes
+let nivel = "Aurelino"
 
-if (XP < 1000) {nivel = "Ferro"}
+ClassificarNiveldeVitorias (50)
 
-else if (XP >= 1000 && XP <= 2000) {nivel = "Bronze"}
+//Funcao com classificacoes
 
-else if (XP >= 2001 && XP <= 5000) {nivel = "Prata"}
+function ClassificarNiveldeVitorias(QuantidadeVitorias) {
+     
 
-else if (XP >= 5001 && XP <= 7000) {nivel = "Ouro"}
+    if (QuantidadeVitorias < 10) {nivel = "Ferro"}
 
-else if (XP >= 7001 && XP <= 8000) {nivel = "Platina"}
+        else if (QuantidadeVitorias >= 11 && QuantidadeVitorias <= 20) {nivel = "Bronze"}
 
-else if (XP >= 8001 & XP <= 9000) {nivel = "Ascendente"}
+        else if (QuantidadeVitorias >= 21 && QuantidadeVitorias <= 50) {nivel = "Prata"}
 
-else if (XP >= 9001 && XP <= 10000) {nivel = "Imortal"}
+        else if (QuantidadeVitorias >= 51 && QuantidadeVitorias <= 80) {nivel = "Ouro"}
 
-else if (XP >= 10001) {nivel = "Radiante"}
+        else if (QuantidadeVitorias >= 81 && QuantidadeVitorias <= 90) {nivel = "Diamante"}
 
+        else if (QuantidadeVitorias >= 91 && QuantidadeVitorias <= 100) {nivel = "Lendario"}
+
+        else if (QuantidadeVitorias >= 101) {nivel = "Imortal"}
 
 // Saida
 
-console.log("O Herói de nome " + nome + " está no nivel de " + nivel)
+console.log("O Herói de saldo " + SaldoRankeadas + " está no nivel de " + nivel)
+} 
