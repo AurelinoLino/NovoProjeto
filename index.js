@@ -1,6 +1,6 @@
 // Entrada nomeando 4 variaveis QuantidadeVitorias, QuantidadeDerrotas, Saldo Rankeadas (SaldoVitorias e Derrotas) e nivel
 
-let QuantidadeVitorias = 30
+let QuantidadeVitorias = 100
 
 let QuantidadeDerrotas = 5
 
