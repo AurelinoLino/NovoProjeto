@@ -1,6 +1,6 @@
 // Entrada nomeando 4 variaveis QuantidadeVitorias, QuantidadeDerrotas, Saldo Rankeadas (SaldoVitorias e Derrotas) e nivel
 
-let QuantidadeVitorias = 100
+let QuantidadeVitorias = 80
 
 let QuantidadeDerrotas = 5
 
@@ -8,7 +8,11 @@ let SaldoRankeadas = QuantidadeVitorias - QuantidadeDerrotas
 
 let nivel = "Aurelino"
 
+Heroi ()
+
 //Funcao com classificacoes
+
+function Heroi () {
      
 if (QuantidadeVitorias< 10) {nivel = "Ferro"}
 
@@ -27,3 +31,4 @@ else if (QuantidadeVitorias >= 101) {nivel = "Imortal"}
 // Saida
 
 console.log("O Herói de saldo " + SaldoRankeadas + " está no nivel de " + nivel)
+}
